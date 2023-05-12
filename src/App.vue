@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import MainLayout from '@/layouts/MainLayout.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div id="app" class="h-screen w-full">
-    <MainLayout />
+    <router-view />
   </div>
 </template>

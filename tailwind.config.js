@@ -12,6 +12,7 @@ module.exports = {
       spwhite: '#ffffff',
       spgreen: '#1db954',
       spgray: '#535353',
+      spcell: '#181818',
       ...colors
     },
     extend: {}

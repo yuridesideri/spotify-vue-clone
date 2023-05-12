@@ -1,3 +1,7 @@
 <script setup lang="ts"></script>
 
-<template></template>
+<template>
+    <h1>Library Nav</h1>
+</template>
+
+<style scoped lang="scss"></style>

@@ -11,7 +11,7 @@
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
-
+  --vt-c-all-black: #000000;
   --vt-c-indigo: #2c3e50;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
@@ -25,14 +25,11 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
   --vt-spotify-green: #1db954;
-
   --vt-spotify-white: #ffffff;
-
   --vt-spotify-black: #191414;
-
   --vt-spotify-gray: #535353;
+  --vt-spotify-cells: var(--vt-c-black);
 
-  
 }
 
 /* semantic color variables for this project */
@@ -52,7 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
+    --color-background: var(--vt-c-all-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
