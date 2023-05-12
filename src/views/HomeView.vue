@@ -2,7 +2,5 @@
 </script>
 
 <template>
-  <main>
-    
-  </main>
+ <h1>HomeView</h1>
 </template>

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -8,7 +11,8 @@ module.exports = {
       spblack: '#191414',
       spwhite: '#ffffff',
       spgreen: '#1db954',
-      spgray: '#535353'
+      spgray: '#535353',
+      ...colors
     },
     extend: {}
   },

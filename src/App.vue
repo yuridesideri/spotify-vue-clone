@@ -1,17 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
 <template>
-  <nav class="sticky left-0 top-0 h-screen w-48">
-    <RouterLink to="/">
-      <img src="@/components/icons/Spotify_Logo_RGB_White.png" class="w-32" />
-    </RouterLink>
-
-    <RouterLink to="/about">About</RouterLink>
-  </nav>
-  <main></main>
-  <RouterView />
+  <div id="app" class="h-screen w-full">
+    <MainLayout />
+  </div>
 </template>
-
-<style scoped></style>
