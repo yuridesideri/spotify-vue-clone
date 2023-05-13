@@ -1,6 +1,13 @@
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+</script>
+
 <template>
-  <div>
+  <div class="fill-white">
     <svg
+      v-if="route.name === 'search'"
       role="img"
       height="24"
       width="24"
@@ -18,6 +25,7 @@
     </svg>
 
     <svg
+      v-else
       role="img"
       height="24"
       width="24"
