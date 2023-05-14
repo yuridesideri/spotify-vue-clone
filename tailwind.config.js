@@ -13,6 +13,7 @@ module.exports = {
       spgreen: '#1db954',
       spgray: '#535353',
       spcell: '#181818',
+      sptext: '#B3B3B3',
       ...colors
     },
     extend: {}

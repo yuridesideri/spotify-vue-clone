@@ -5,12 +5,10 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="fill-white">
+  <div>
     <svg
       v-if="route.name === 'search'"
       role="img"
-      height="24"
-      width="24"
       aria-hidden="true"
       class="Svg-sc-ytk21e-0 ldgdZj search-active-icon"
       viewBox="0 0 24 24"
@@ -27,8 +25,6 @@ const route = useRoute()
     <svg
       v-else
       role="img"
-      height="24"
-      width="24"
       aria-hidden="true"
       class="Svg-sc-ytk21e-0 ldgdZj search-icon"
       viewBox="0 0 24 24"

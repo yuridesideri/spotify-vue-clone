@@ -5,12 +5,10 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="fill-white">
+  <div class="">
     <svg
       v-if="route.name === 'home'"
       role="img"
-      height="24"
-      width="24"
       aria-hidden="true"
       class="Svg-sc-ytk21e-0 ldgdZj home-active-icon"
       viewBox="0 0 24 24"
@@ -24,8 +22,6 @@ const route = useRoute()
     <svg
       v-else
       role="img"
-      height="24"
-      width="24"
       aria-hidden="true"
       class="Svg-sc-ytk21e-0 ldgdZj home-icon"
       viewBox="0 0 24 24"
