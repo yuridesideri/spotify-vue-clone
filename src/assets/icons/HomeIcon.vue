@@ -5,7 +5,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="">
+  <div class="min-h-min aspect-square">
     <svg
       v-if="route.name === 'home'"
       role="img"

@@ -11,24 +11,24 @@ function checkActiveNav(routeName: RouteRecordName) {
 </script>
 
 <template>
-  <div class="flex h-full w-full flex-col justify-center gap-5 pl-5 pr-5">
+  <div class="flex h-full w-full flex-col justify-center gap-5 p-2 pl-5 pr-5">
     <RouterLink
       to="/"
       id="home-link"
-      class="flex items-center gap-5 fill-sptext font-semibold text-sptext transition duration-400 ease-in-out hover:fill-white hover:text-white"
+      class="flex items-center gap-5 fill-sptext font-bold text-sptext transition duration-300 ease-in-out hover:fill-white hover:text-white"
       :class="[checkActiveNav('home')]"
     >
-      <HomeIcon class="aspect-square w-[21px]" />
-      <h2 class="text-sm font-bold text-inherit">Home</h2>
+      <HomeIcon class="aspect-square w-5" />
+      <h1 class="font-bold text-inherit">Home</h1>
     </RouterLink>
     <RouterLink
       to="/search"
       id="search-link"
-      class="flex items-center gap-5 fill-sptext font-semibold text-sptext transition duration-400 ease-in-out hover:fill-white hover:text-white"
+      class="flex items-center gap-5 fill-sptext font-semibold text-sptext transition duration-300 ease-in-out hover:fill-white hover:text-white"
       :class="[checkActiveNav('search')]"
     >
-      <SearchIcon class="aspect-square w-[21px]" />
-      <h2 class="text-sm font-bold text-inherit">Search</h2>
+      <SearchIcon class="aspect-square w-5" />
+      <h1 class="font-bold text-inherit">Search</h1>
     </RouterLink>
   </div>
 </template>

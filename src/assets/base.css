@@ -29,6 +29,7 @@
   --vt-spotify-black: #191414;
   --vt-spotify-gray: #535353;
   --vt-spotify-cells: var(--vt-c-black);
+  --vt-spotify-text: #A7A7A7;
 
 }
 
@@ -37,6 +38,7 @@
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
+  --color-background-highlight: #1a1a1a;
 
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
@@ -82,4 +84,27 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: var(--vt-spotify-text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.title{
+  color: white;
+  font-size: 1rem;
+}
+
+.section-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--vt-spotify-text);
 }
