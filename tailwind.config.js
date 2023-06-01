@@ -14,7 +14,8 @@ module.exports = {
       spgray: '#535353',
       spcell: '#181818',
       sptext: '#B3B3B3',
-      ...colors
+      ...colors,
+      sky: colors.lightBlue,
     },
     extend: {}
   },
