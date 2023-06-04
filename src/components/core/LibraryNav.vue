@@ -2,9 +2,9 @@
 import LibraryIcon from '@/assets/icons/LibraryIcon.vue'
 import PlusIconVue from '@/assets/icons/PlusIcon.vue'
 import RightArrowIconVue from '@/assets/icons/RightArrowIcon.vue'
+import Playlist from '@/components/Playlists/Playlist.vue'
 import SearchBar from '@/components/Playlists/SearchBar.vue'
 import TagFilter from '@/components/TagFilters/TagFilter.vue'
-import Playlist from '@/components/Playlists/Playlist.vue'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -24,7 +24,7 @@ import { RouterLink } from 'vue-router'
                 >
                     <PlusIconVue class="h-4 justify-self-end fill-sptext" />
                 </button>
-                <button>
+                <button class="hidden lg:block">
                     <RightArrowIconVue
                         class="flex aspect-square h-8 items-center justify-center rounded-full hover:bg-[var(--color-background-highlight)] hover:brightness-125"
                     />
@@ -35,7 +35,41 @@ import { RouterLink } from 'vue-router'
         <div class="playlists">
             <SearchBar />
             <main>
-                <Playlist title="Liked Songs" type="Playlist" creator="586 songs"/>
+                <Playlist
+                    title="Liked Songs"
+                    type="Playlist"
+                    creator="586 songs"
+                    icon="https://misc.scdn.co/liked-songs/liked-songs-300.png"
+                />
+                <Playlist
+                    title="Your Episodes"
+                    type="Saved & downloaded episodes"
+                    icon="https://misc.scdn.co/your-episodes/SE-64.png"
+                />
+                <Playlist
+                    title="Primocast"
+                    type="Podcast"
+                    creator="Grupo Primo"
+                    icon="https://i.scdn.co/image/ab6765630000955fa7b5d2464365bf9cfa5ce5ee"
+                />
+                <Playlist
+                    title="Coding Mode"
+                    type="Playlist"
+                    creator="Spotify"
+                    icon="https://i.scdn.co/image/ab67706f00000002863b311d4b787ed621f7e696"
+                />
+                <Playlist
+                    title="B-SIDE com Carlos Busch"
+                    type="Podcast"
+                    creator="Carlos Busch"
+                    icon="https://i.scdn.co/image/ab6765630000955f9ae60f6e5ea1b3cfe445d8c0"
+                />
+                <Playlist
+                    title="Workout Music"
+                    type="Album"
+                    creator="Chris Heria"
+                    icon="https://i.scdn.co/image/ab67616d000011ebe452d6f03675585a12a90456"
+                />
             </main>
         </div>
         <div class="search">

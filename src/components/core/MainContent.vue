@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainHeader from '@/components/MainContent/MainHeader.vue'
+</script>
 
 <template>
-
-    <h1>Main Content</h1>
-    <router-view />
+    <MainHeader />
+    <RouterView />
 </template>

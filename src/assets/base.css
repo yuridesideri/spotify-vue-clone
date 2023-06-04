@@ -63,6 +63,13 @@
     --section-gap: 160px;
 }
 
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-background: var(--vt-c-all-black);
@@ -75,15 +82,6 @@
         --color-heading: var(--vt-c-text-dark-1);
         --color-text: var(--vt-c-text-dark-2);
     }
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    position: relative;
-    font-weight: normal;
 }
 
 body {
