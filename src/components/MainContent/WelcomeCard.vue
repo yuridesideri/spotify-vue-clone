@@ -14,13 +14,14 @@ withDefaults(
 
 <template>
     <button
-        class="flex h-full w-auto flex-grow items-center gap-4 rounded-md bg-[#302F35] hover:bg-[#454447] hover:brightness-100"
+        class="flex items-center gap-4 rounded-md bg-[#302F35] hover:bg-[#454447] hover:brightness-100"
     >
-        <div
-            class="aspect-square h-full overflow-hidden rounded-l-md bg-cover"
-            :style="`background-image: url(${image})`"
-        />
-        <h1 class="text-white">{{ title }}</h1>
+        <div class="relative flex aspect-square h-full">
+            <img :src="image" alt="" class="absolute aspect-square h-full w-full" />
+        </div>
+        <div>
+            <h1 class="text-white">{{ title }}</h1>
+        </div>
     </button>
 </template>
 

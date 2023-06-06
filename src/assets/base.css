@@ -119,6 +119,10 @@ h1 {
     font-weight: 700;
 }
 
+img{
+    object-fit: cover;
+}
+
 .title {
     color: white;
     font-size: 1rem;
