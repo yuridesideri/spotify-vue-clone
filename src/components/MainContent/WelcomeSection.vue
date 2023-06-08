@@ -3,7 +3,7 @@ import WelcomeCard from '@/components/MainContent/WelcomeCard.vue'
 </script>
 
 <template>
-    <div class="flex flex-col gap-4 p-4 pt-0">
+    <div class="flex flex-col gap-4 pt-0">
         <h1 class="text-3xl font-bold text-white">Good Evening</h1>
         <div
             class="grid h-56 xl:h-48 grid-cols-[repeat(2,_1fr)] grid-rows-[repeat(3,_1fr)] gap-x-5 gap-y-3 xl:grid-cols-[repeat(3,_1fr)] xl:grid-rows-[repeat(2,_1fr)]"
