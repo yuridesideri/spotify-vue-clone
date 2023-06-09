@@ -3,6 +3,8 @@ import MainHeader from '@/components/MainContent/MainHeader.vue'
 </script>
 
 <template>
-    <MainHeader />
-    <RouterView />
+    <section class="flex flex-col h-full">
+        <MainHeader />
+        <RouterView />
+    </section>
 </template>

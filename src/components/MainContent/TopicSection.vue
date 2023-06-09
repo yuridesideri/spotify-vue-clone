@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useResizeObserver } from '@vueuse/core'
 import { reactive, ref } from 'vue'
 import TopicCard from './TopicCard.vue'
 
@@ -36,18 +37,39 @@ const topicCards = reactive([
 ])
 
 const topicSectionElement = ref<HTMLDivElement>()
+
+const topicSectionColumns = ref<number>()
+
+useResizeObserver(topicSectionElement, () => {
+    const topicSectionElementWidth = topicSectionElement.value?.offsetWidth
+    if (topicSectionElementWidth) {
+        const topicCardWidth = 150 // px
+        const topicCardGap = 24 // px
+        const topicCardCount = Math.floor(
+            topicSectionElementWidth / (topicCardWidth + topicCardGap)
+        )
+
+        topicSectionColumns.value = topicCardCount
+    }
+})
 </script>
 
 <template>
-    <section class="flex h-[300px] flex-col">
-        <h1>Made for You</h1>
+    <section class="flex max-h-[380px] min-h-max flex-col">
+        <div class="mb-4 flex justify-between">
+            <h1 class="text-2xl text-white">Made for You</h1>
+            <p class="font-bold hover:cursor-pointer hover:underline">Show all</p>
+        </div>
         <div
-            class="flex w-full flex-wrap justify-between gap-5 overflow-hidden"
-            :class="topicSectionElement"
+            class="h-max w-full grid-flow-col grid-rows-1 gap-6 overflow-hidden"
             ref="topicSectionElement"
+            :class="`${(topicSectionColumns! > topicCards.length) || (topicSectionColumns! <= 2) ? 'flex' : 'grid'} grid-cols-${topicSectionColumns}`"
         >
-            <template v-for="topicCard in topicCards">
-                <TopicCard :topicCard="topicCard" />
+            <template v-for="(topicCard, index) in topicCards">
+                <TopicCard
+                    v-if="index < topicSectionColumns! || index < 2"
+                    :topicCard="topicCard"
+                />
             </template>
         </div>
     </section>

@@ -5,7 +5,7 @@ import ProfileIconVue from '@/assets/icons/ProfileIcon.vue'
 </script>
 
 <template>
-    <div class="flex h-16 w-full justify-between p-5">
+    <div class="flex h-16 w-full justify-between p-5 sticky">
         <div class="flex items-center gap-2">
             <button
                 class="flex aspect-square h-8 items-center justify-center rounded-full bg-black"
