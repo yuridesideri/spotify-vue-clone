@@ -5,7 +5,7 @@ import WelcomeSection from '@/components/MainContent/WelcomeSection.vue'
 
 <template>
     <main class="flex flex-col p-5 gap-6 overflow-y-auto h-full">
-        <WelcomeSection />
+        <WelcomeSection />tion-all duration-150
         <TopicSection />
         <TopicSection />
 
